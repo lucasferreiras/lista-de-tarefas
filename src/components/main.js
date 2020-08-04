@@ -4,11 +4,15 @@ import { FaPlus, FaEdit, FaWindowClose } from 'react-icons/fa';
 import './main.css';
 
 export default class Main extends Component {
-  state = {
-    novaTarefa: '',
-    tarefas: [],
-    index: -1,
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      novaTarefa: '',
+      tarefas: [],
+      index: -1,
+    };
+  }
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -31,6 +35,7 @@ export default class Main extends Component {
       this.setState({
         tarefas: novasTarefas,
         index: -1,
+        novaTarefa: '',
       });
     }
   }
