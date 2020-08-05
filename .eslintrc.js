@@ -21,6 +21,8 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': 0,
     'semi': ['error','always'],
-    'react/state-in-constructor': 0
+    'react/state-in-constructor': 0,
+    'react/destructuring-assignment':0,
+    'react/prop-types':0
   },
 };
